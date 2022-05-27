@@ -1,0 +1,41 @@
+
+{% extends 'app/base.html '%}
+
+{% load static %}
+
+{% block js %}
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+{% endblock %}
+
+{% block contenido %}
+<br><br><br>
+
+<br>
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid ganoapp" 
+            src="{% static 'app/img/ganoapp.jpg' %}" alt="">
+ 
+    </div>
+    <div class="col-lg-15 col-md-7">
+        <br><br><br>
+        <h4><FONT COLOR="black">
+        <p>Es un sistema informático que
+            permita gestionar y controlar el registro de bovinos, con el
+            firme propósito de agilizar los procedimientos y así facilitar las actividades en el campo agrícola...</p>
+        <p>La preocupación central del ganadero, como cualquier otro empresario, es
+            cómo lograr un mayor ingreso económico, por lo que la tecnología que se
+            desarrolle debe proveer valor agregado a las actividades del productor. </p>
+        <p> Con la
+            utilización de un sistema automatizado se incrementa la confiabilidad de los
+            resultados, se humaniza el trabajo y disminuye el tiempo de procesamiento de
+            la información.</p> </FONT></h4>  
+    </div>
+</div>
+
+{% endblock %}
+
